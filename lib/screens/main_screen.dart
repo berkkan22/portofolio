@@ -27,8 +27,9 @@ class MyHomePage extends StatelessWidget {
           child: Stack(
             children: [
               Blur(
-                blur: 5,
-                blurColor: Colors.black.withOpacity(0.7),
+                blur: 1,
+                colorOpacity: 0.7,
+                blurColor: Colors.black,
                 child: Container(
                   constraints: const BoxConstraints(minHeight: 882),
                   child: Image.asset(
