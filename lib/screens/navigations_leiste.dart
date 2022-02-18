@@ -8,44 +8,42 @@ class NavigationsLeiste extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Positioned(
-      // FIXME: nicht responsiv
-      top: 34,
-      right: 120,
-      child: SizedBox(
-        height: 44.5,
-        width: 530.75,
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Column(
-              children: [
-                Text(
-                  'HOME',
-                  style: naviText,
-                ),
-                Container(
-                  width: 113.5,
-                  height: 5,
-                  color: secondaryColor,
-                )
-              ],
-            ),
-            Text(
-              'ABOUT',
-              style: naviText,
-            ),
-            Text(
-              'SKILLS',
-              style: naviText,
-            ),
-            Text(
-              'PROJECTS',
-              style: naviText,
-            ),
-          ],
-        ),
+    return Container(
+      // constraints: BoxConstraints.tight(const Size(450, 44.5)),
+      margin: const EdgeInsets.fromLTRB(0, 30, 0, 0),
+      height: 44.5,
+      width: 450,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'HOME',
+                style: naviText,
+              ),
+              Container(
+                width: 80,
+                height: 4,
+                color: secondaryColor,
+              )
+            ],
+          ),
+          Text(
+            'ABOUT',
+            style: naviText,
+          ),
+          Text(
+            'SKILLS',
+            style: naviText,
+          ),
+          Text(
+            'PROJECTS',
+            style: naviText,
+          ),
+        ],
       ),
     );
   }

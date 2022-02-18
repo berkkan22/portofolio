@@ -30,3 +30,10 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+/// Bei 1000 Pixel neues Layout auf tablet 
+/// anpassen heißt alles centrieren navigationsleiste 
+/// in hamburger machen
+/// und mehr abstand zwischen social media und so
+/// 

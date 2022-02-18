@@ -8,21 +8,17 @@ class ScrollDown extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Positioned(
-      top: 850,
-      left: MediaQuery.of(context).size.width / 2,
-      child: Column(
-        children: [
-          SvgPicture.asset(
-            'icons/arrow_down.svg',
-            height: 50,
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          Text('Scroll down')
-        ],
-      ),
+    return Column(
+      children: [
+        SvgPicture.asset(
+          'icons/arrow_down.svg',
+          height: 50,
+        ),
+        const SizedBox(
+          height: 10,
+        ),
+        Text('Scroll down')
+      ],
     );
   }
 }
