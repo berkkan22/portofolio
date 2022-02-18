@@ -6,4 +6,4 @@ const secondaryColor = Color(0xFF5E72EB);
 const bgColor = Color(0xFF120C6E);
 const bodyTextColor = Color(0xFFF4F1DE);
 
-TextStyle naviText = GoogleFonts.roboto(fontSize: 28);
+TextStyle naviText = GoogleFonts.roboto(fontSize: 20);
