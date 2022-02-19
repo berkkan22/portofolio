@@ -45,14 +45,9 @@ class CatchText extends StatelessWidget {
             child: SizedBox(
               width: 505,
               child: Text(
-                'Programming is a skill that is best acquired through practice and examples, not books.',
-                textAlign: TextAlign.center,
-                style: GoogleFonts.roboto(
-                  color: bodyTextColor,
-                  fontSize: 32,
-                  height: 1.5,
-                ),
-              ),
+                  'Programming is a skill that is best acquired through practice and examples, not books.',
+                  textAlign: TextAlign.center,
+                  style: styleZitat),
             ),
           ),
           const SizedBox(height: 12),
@@ -68,7 +63,7 @@ class CatchText extends StatelessWidget {
                 padding: EdgeInsets.fromLTRB(13.5, 0, 13.5, 0),
                 child: Text(
                   'Alan Turing',
-                  style: GoogleFonts.parisienne(fontSize: 30),
+                  style: styleUnterschrift,
                 ),
               ),
               Container(

@@ -78,19 +78,7 @@ class MyHomePage extends StatelessWidget {
                 ],
               ),
               Center(
-                child:
-                    // Column(
-                    //   children: [
-                    // Flexible(
-                    //   flex: 5,
-                    //   fit: FlexFit.tight,
-                    //   child: SizedBox(),
-                    // ),
-                    // Flexible(
-                    //   flex: 2,
-                    //   fit: FlexFit.tight,
-                    //   child:
-                    Container(
+                child: Container(
                   margin: EdgeInsets.fromLTRB(
                       0, MediaQuery.of(context).size.height, 0, 0),
                   width: 1200,
@@ -109,7 +97,7 @@ class MyHomePage extends StatelessWidget {
                         children: [
                           Text(
                             'Skills',
-                            style: GoogleFonts.roboto(fontSize: 30),
+                            style: styleHeadline4,
                           ),
                           SizedBox(
                             height: 50,
@@ -171,10 +159,7 @@ class MyHomePage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  // ),
                 ),
-                //   ],
-                // ),
               ),
             ],
           ),

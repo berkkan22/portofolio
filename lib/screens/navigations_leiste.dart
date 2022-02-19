@@ -22,7 +22,7 @@ class NavigationsLeiste extends StatelessWidget {
             children: [
               Text(
                 'HOME',
-                style: naviText,
+                style: styleNaviTextSelectet,
               ),
               Container(
                 width: 80,
@@ -33,15 +33,15 @@ class NavigationsLeiste extends StatelessWidget {
           ),
           Text(
             'ABOUT',
-            style: naviText,
+            style: styleNaviTextNotSelectet,
           ),
           Text(
             'SKILLS',
-            style: naviText,
+            style: styleNaviTextNotSelectet,
           ),
           Text(
             'PROJECTS',
-            style: naviText,
+            style: styleNaviTextNotSelectet,
           ),
         ],
       ),

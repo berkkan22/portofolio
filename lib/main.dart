@@ -21,10 +21,6 @@ class MyApp extends StatelessWidget {
         primaryColor: primaryColor,
         scaffoldBackgroundColor: bgColor,
         canvasColor: bgColor,
-        // textTheme: GoogleFonts.robotoTextTheme(textTheme).copyWith(
-        //   bodyText1:
-        //       GoogleFonts.oswald(textStyle: GoogleFonts.roboto(fontSize: 28)),
-        // ),
       ),
       home: MyHomePage(),
     );
@@ -32,8 +28,9 @@ class MyApp extends StatelessWidget {
 }
 
 
+/// Ab 1204 alles zentrieren?
+/// Und 
 /// Bei 1000 Pixel neues Layout auf tablet 
 /// anpassen heißt alles centrieren navigationsleiste 
 /// in hamburger machen
 /// und mehr abstand zwischen social media und so
-/// 
