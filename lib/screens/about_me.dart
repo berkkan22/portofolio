@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../constans.dart';
-import '../text.dart';
+import '../constants/constans.dart';
+import '../constants/text.dart';
 
 class AboutMe extends StatelessWidget {
   const AboutMe({
@@ -18,9 +18,9 @@ class AboutMe extends StatelessWidget {
           'About me',
           style: styleHeadline4,
         ),
-        SizedBox(height: 30),
+        const SizedBox(height: 30),
         Container(
-          padding: EdgeInsets.fromLTRB(16, 0, 16, 0),
+          padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
           width: 800,
           child: Text(
             about,

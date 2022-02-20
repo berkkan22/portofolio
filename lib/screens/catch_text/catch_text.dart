@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portofolio/constans.dart';
-import 'package:portofolio/screens/social_media.dart';
+import 'package:portofolio/constants/constans.dart';
+import 'package:portofolio/screens/components/social_media.dart';
 
 class CatchText extends StatelessWidget {
   const CatchText({
@@ -12,7 +12,7 @@ class CatchText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.fromLTRB(0, 150, 0, 0),
+      margin: EdgeInsets.fromLTRB(0, 130, 0, 0),
       width: 698,
       height: 528.27,
       child: Column(

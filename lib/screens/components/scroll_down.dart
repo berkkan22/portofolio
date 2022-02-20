@@ -17,7 +17,7 @@ class ScrollDown extends StatelessWidget {
         const SizedBox(
           height: 10,
         ),
-        Text('Scroll down')
+        const Text('Scroll down')
       ],
     );
   }

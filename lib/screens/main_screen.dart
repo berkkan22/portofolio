@@ -4,12 +4,17 @@ import 'package:blur/blur.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portofolio/constans.dart';
-import 'package:portofolio/screens/catch_text.dart';
-import 'package:portofolio/screens/navigations_leiste.dart';
-import 'package:portofolio/screens/scroll_down.dart';
+import 'package:portofolio/constants/constans.dart';
+import 'package:portofolio/screens/bg_image.dart';
+import 'package:portofolio/screens/catch_text/catch_text.dart';
+import 'package:portofolio/screens/catch_text/catch_text_layout.dart';
+import 'package:portofolio/constants/coding_lang.dart';
+import 'package:portofolio/screens/components/divider.dart';
+import 'package:portofolio/screens/nav_bar/navigations_leiste_layout.dart';
+import 'package:portofolio/screens/components/scroll_down.dart';
+import 'package:portofolio/screens/skills.dart';
 
-import '../text.dart';
+import '../constants/text.dart';
 import 'about_me.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -23,58 +28,21 @@ class MyHomePage extends StatelessWidget {
       body: SingleChildScrollView(
         controller: _controller,
         child: Container(
-          constraints: const BoxConstraints(maxHeight: 3000, maxWidth: 1920),
+          constraints: BoxConstraints(
+            maxHeight: 3000,
+            maxWidth: MediaQuery.of(context).size.width,
+          ),
           child: Stack(
             children: [
-              Blur(
-                blur: 1,
-                colorOpacity: 0.7,
-                blurColor: Colors.black,
-                child: Container(
-                  constraints: const BoxConstraints(minHeight: 882),
-                  child: Image.asset(
-                    'images/bg.jpg',
-                    fit: BoxFit.fitHeight,
-                  ),
-                ),
-              ),
+              const BackgroundImage(),
               Column(
                 children: [
-                  Row(
-                    children: const [
-                      Flexible(
-                        flex: 5,
-                        fit: FlexFit.tight,
-                        child: SizedBox(),
-                      ),
-                      NavigationsLeiste(),
-                      Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: SizedBox(),
-                      ),
-                    ],
+                  const NavigationsLeisteLayout(),
+                  const ChatchTextLayout(),
+                  Container(
+                    margin: const EdgeInsets.fromLTRB(0, 25, 0, 0),
+                    child: const ScrollDown(),
                   ),
-                  Row(
-                    children: const [
-                      Flexible(
-                        flex: 4,
-                        fit: FlexFit.tight,
-                        child: SizedBox(),
-                      ),
-                      Flexible(
-                        flex: 4,
-                        fit: FlexFit.tight,
-                        child: CatchText(),
-                      ),
-                      Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: SizedBox(),
-                      ),
-                    ],
-                  ),
-                  const ScrollDown(),
                 ],
               ),
               Center(
@@ -84,7 +52,7 @@ class MyHomePage extends StatelessWidget {
                   width: 1200,
                   color: primaryColor,
                   child: Column(
-                    children: [
+                    children: const [
                       AboutMe(),
                       SizedBox(
                         height: 50,
@@ -93,69 +61,13 @@ class MyHomePage extends StatelessWidget {
                       SizedBox(
                         height: 50,
                       ),
-                      Column(
-                        children: [
-                          Text(
-                            'Skills',
-                            style: styleHeadline4,
-                          ),
-                          SizedBox(
-                            height: 50,
-                          ),
-                          SizedBox(
-                            width: 470,
-                            child: Wrap(
-                              // crossAxisCount: 3,
-                              // mainAxisSpacing: 80,
-                              // crossAxisSpacing: 80,
-                              // shrinkWrap: true,
-                              alignment: WrapAlignment.center,
-
-                              children: [
-                                CircleAvatar(
-                                  // radius: 1,
-                                  backgroundColor: Colors.white,
-                                  child: Image.asset(
-                                    'images/flutter.png',
-                                    scale: 3.5,
-                                  ),
-                                ),
-                                CircleAvatar(
-                                  radius: 10,
-                                  backgroundColor: Colors.white,
-                                  child: Image.asset(
-                                    'images/dart.png',
-                                    scale: 3.5,
-                                  ),
-                                ),
-                                CircleAvatar(
-                                  // radius: 1,
-                                  backgroundColor: Colors.white,
-                                  child: Image.asset(
-                                    'images/python.png',
-                                    scale: 3.5,
-                                  ),
-                                ),
-                                CircleAvatar(
-                                  radius: 10,
-                                  backgroundColor: Colors.white,
-                                  child: Image.asset(
-                                    'images/html.png',
-                                    scale: 3.5,
-                                  ),
-                                ),
-                                CircleAvatar(
-                                  radius: 10,
-                                  backgroundColor: Colors.white,
-                                  child: Image.asset(
-                                    'images/js.png',
-                                    scale: 3.5,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
+                      Skills(),
+                      SizedBox(
+                        height: 50,
+                      ),
+                      DividerLine(),
+                      SizedBox(
+                        height: 50,
                       ),
                     ],
                   ),
@@ -165,22 +77,6 @@ class MyHomePage extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-}
-
-class DividerLine extends StatelessWidget {
-  const DividerLine({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Divider(
-      height: 4,
-      indent: 310,
-      endIndent: 310,
-      color: secondaryColor,
     );
   }
 }
