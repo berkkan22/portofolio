@@ -8,42 +8,32 @@ class SocialMedia extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    return Wrap(
+      crossAxisAlignment: WrapCrossAlignment.center,
+      spacing: 10,
+      // crossAxisAlignment: CrossAxisAlignment.center,
+      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Flexible(
-          flex: 1,
-          child: SvgPicture.asset(
-            'icons/github.svg',
-          ),
+        SvgPicture.asset(
+          'icons/github.svg',
         ),
         const SizedBox(
           width: 16,
         ),
-        Flexible(
-          flex: 1,
-          child: SvgPicture.asset(
-            'icons/instagram.svg',
-          ),
+        SvgPicture.asset(
+          'icons/instagram.svg',
         ),
         const SizedBox(
           width: 16,
         ),
-        Flexible(
-          flex: 1,
-          child: SvgPicture.asset(
-            'icons/snapchat.svg',
-          ),
+        SvgPicture.asset(
+          'icons/snapchat.svg',
         ),
         const SizedBox(
           width: 16,
         ),
-        Flexible(
-          flex: 1,
-          child: Image.asset(
-            'icons/gmail.png',
-          ),
+        Image.asset(
+          'icons/gmail.png',
         ),
         // <a target="_blank" href="https://icons8.de/icon/jbThfk0sCNDq/gmail-is-a-free-email-service-developed-by-google">Gmail is a free email service developed by Google</a> Icon von <a target="_blank" href="https://icons8.de">Icons8</a>
       ],
