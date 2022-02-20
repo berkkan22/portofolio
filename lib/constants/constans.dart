@@ -24,6 +24,13 @@ TextStyle styleHeadline4 = GoogleFonts.roboto(
   color: bodyTextColor,
 );
 
+TextStyle styleHeadline3 = GoogleFonts.roboto(
+  fontSize: 20.0,
+  fontWeight: FontWeight.w300,
+  letterSpacing: 0.25,
+  color: bodyTextColor,
+);
+
 TextStyle styleBodyText1 = GoogleFonts.roboto(
   fontSize: 16,
   fontWeight: FontWeight.w400,
