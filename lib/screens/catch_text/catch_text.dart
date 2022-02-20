@@ -45,9 +45,10 @@ class CatchText extends StatelessWidget {
             child: SizedBox(
               width: 505,
               child: Text(
-                  'Programming is a skill that is best acquired through practice and examples, not books.',
-                  textAlign: TextAlign.center,
-                  style: styleZitat),
+                'Programming is a skill that is best acquired through practice and examples, not books.',
+                textAlign: TextAlign.center,
+                style: styleZitat,
+              ),
             ),
           ),
           const SizedBox(height: 12),
