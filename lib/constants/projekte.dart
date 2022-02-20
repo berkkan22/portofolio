@@ -4,9 +4,16 @@ class Projekt {
   final String beschreibung;
   final String programmierSprache;
   final String datum;
+  bool visible;
 
-  Projekt(this.name, this.bild, this.beschreibung, this.programmierSprache,
-      this.datum);
+  Projekt(
+    this.name,
+    this.bild,
+    this.beschreibung,
+    this.programmierSprache,
+    this.datum, {
+    this.visible = false,
+  });
 }
 
 List<Projekt> projektList = [

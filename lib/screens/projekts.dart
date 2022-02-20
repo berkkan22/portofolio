@@ -12,8 +12,6 @@ class Projekts extends StatefulWidget {
 }
 
 class _ProjektsState extends State<Projekts> {
-  bool _visible = false;
-
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -54,7 +52,7 @@ class _ProjektsState extends State<Projekts> {
                               },
                               onHover: (value) {
                                 setState(() {
-                                  _visible = value;
+                                  projekt.visible = value;
                                 });
                               },
                               child: Stack(
@@ -66,7 +64,7 @@ class _ProjektsState extends State<Projekts> {
                                     // Screenshot
                                   ),
                                   Visibility(
-                                    visible: _visible,
+                                    visible: projekt.visible,
                                     child: Container(
                                       padding: const EdgeInsets.all(8),
                                       width: 250,
