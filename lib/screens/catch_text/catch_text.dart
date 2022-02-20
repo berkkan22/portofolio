@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portofolio/constants/constans.dart';
 import 'package:portofolio/screens/components/social_media.dart';
@@ -12,7 +11,7 @@ class CatchText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.fromLTRB(0, 130, 0, 0),
+      margin: const EdgeInsets.fromLTRB(0, 130, 0, 0),
       width: 698,
       height: 528.27,
       child: Column(
@@ -61,7 +60,7 @@ class CatchText extends StatelessWidget {
                 color: secondaryColor,
               ),
               Padding(
-                padding: EdgeInsets.fromLTRB(13.5, 0, 13.5, 0),
+                padding: const EdgeInsets.fromLTRB(13.5, 0, 13.5, 0),
                 child: Text(
                   'Alan Turing',
                   style: styleUnterschrift,
@@ -75,7 +74,7 @@ class CatchText extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 50),
-          SocialMedia(),
+          const SocialMedia(),
         ],
       ),
     );

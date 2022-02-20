@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portofolio/constants/constans.dart';
 import 'package:portofolio/screens/main_screen.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,8 +11,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textTheme = Theme.of(context).textTheme;
-
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',

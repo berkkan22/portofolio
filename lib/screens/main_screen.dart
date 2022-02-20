@@ -1,14 +1,7 @@
-import 'dart:ui';
-
-import 'package:blur/blur.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:portofolio/constants/constans.dart';
 import 'package:portofolio/screens/bg_image.dart';
-import 'package:portofolio/screens/catch_text/catch_text.dart';
 import 'package:portofolio/screens/catch_text/catch_text_layout.dart';
-import 'package:portofolio/constants/coding_lang.dart';
 import 'package:portofolio/screens/components/divider.dart';
 import 'package:portofolio/screens/components/social_media.dart';
 import 'package:portofolio/screens/components/triangle.dart';
@@ -17,7 +10,6 @@ import 'package:portofolio/screens/components/scroll_down.dart';
 import 'package:portofolio/screens/projekts.dart';
 import 'package:portofolio/screens/skills.dart';
 
-import '../constants/text.dart';
 import 'about_me.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -33,8 +25,6 @@ class MyHomePage extends StatelessWidget {
       body: SingleChildScrollView(
         controller: _controller,
         child: Container(
-          // padding: const EdgeInsets.fromLTRB(0, 0, 0, 100),
-          // margin: const EdgeInsets.fromLTRB(0, 0, 0, 100),
           constraints: BoxConstraints(
             // maxHeight: 3000,
             maxWidth: MediaQuery.of(context).size.width,
@@ -59,33 +49,33 @@ class MyHomePage extends StatelessWidget {
                   width: 1200,
                   color: primaryColor,
                   child: Column(
-                    children: [
-                      const AboutMe(),
-                      const SizedBox(
+                    children: const [
+                      AboutMe(),
+                      SizedBox(
                         height: 50,
                       ),
-                      const DividerLine(),
-                      const SizedBox(
+                      DividerLine(),
+                      SizedBox(
                         height: 50,
                       ),
-                      const Skills(),
-                      const SizedBox(
+                      Skills(),
+                      SizedBox(
                         height: 50,
                       ),
-                      const DividerLine(),
-                      const SizedBox(
+                      DividerLine(),
+                      SizedBox(
                         height: 50,
                       ),
                       Projekts(),
-                      const SizedBox(
+                      SizedBox(
                         height: 50,
                       ),
-                      const DividerLine(),
-                      const SizedBox(
+                      DividerLine(),
+                      SizedBox(
                         height: 80,
                       ),
-                      const SocialMedia(),
-                      const Triangle()
+                      SocialMedia(),
+                      Triangle()
                     ],
                   ),
                 ),

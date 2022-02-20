@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:portofolio/constants/constans.dart';
 import 'package:portofolio/screens/nav_bar/navigations_leiste.dart';
 
 class NavigationsLeisteLayout extends StatelessWidget {
@@ -10,7 +9,7 @@ class NavigationsLeisteLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: [
+      children: const [
         Flexible(
           flex: 5,
           fit: FlexFit.tight,

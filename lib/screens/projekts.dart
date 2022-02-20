@@ -3,7 +3,7 @@ import 'package:portofolio/constants/constans.dart';
 import 'package:portofolio/constants/projekte.dart';
 
 class Projekts extends StatefulWidget {
-  Projekts({
+  const Projekts({
     Key? key,
   }) : super(key: key);
 
@@ -16,7 +16,7 @@ class _ProjektsState extends State<Projekts> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 900,
       child: Column(
         children: [
