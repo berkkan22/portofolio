@@ -56620,7 +56620,7 @@ N(a,b){var s=null
 return A.ip(A.a([B.Hu,A.eK("About me",s,s,$.a7b(),s,s),B.Ht,A.cO(s,A.eK("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",s,s,$.aai(),B.dT,s),B.l,s,s,s,s,s,s,B.l9,s,s,800)],t.p),B.R,B.a8)}}
 A.A2.prototype={
 N(a,b){var s=null,r=t.w,q=b.a3(r).f,p=b.a3(r).f
-return new A.A9(A.cO(s,A.a7W("images/bg.jpg",b.a3(r).f.a.a<=1596.67?B.uw:B.uv,s),B.l,s,new A.ay(q.a.a,1/0,p.a.b,1200),s,s,s,s,s,s,s,s),1,B.m,0.7,s)}}
+return new A.A9(A.cO(s,A.a7W("assets/images/bg.jpg",b.a3(r).f.a.a<=1596.67?B.uw:B.uv,s),B.l,s,new A.ay(q.a.a,1/0,p.a.b,1200),s,s,s,s,s,s,s,s),1,B.m,0.7,s)}}
 A.Aq.prototype={
 N(a,b){var s=null,r=t.p
 return A.cO(s,A.ip(A.a([A.Rl(B.a2,A.a8u(s,s,B.cM,!0,s,A.wx(A.a([A.wx(s,A.lK(B.aP,80,s,s,s),"I am a "),A.wx(s,A.lK(B.ca,80,B.ar,s,s),"Developer")],t.VO),s,s),B.aZ,s,s,1,B.b_),B.l,B.cS),B.Hv,A.Rl(B.a2,A.j3(A.eK("Programming is a skill that is best acquired through practice and examples, not books.",s,s,$.aiw(),B.dT,s),s,505),B.l,B.cS),B.Hs,A.vK(A.a([A.cO(s,s,B.l,B.ca,s,s,s,5,s,s,s,s,56),new A.me(B.Ap,A.eK("Alan Turing",s,s,$.aiv(),s,s),s),A.cO(s,s,B.l,B.ca,s,s,s,5,s,s,s,s,56)],r),B.R,B.qu,B.bc),B.aY,B.tg],r),B.R,B.a8),B.l,s,s,s,s,528.27,B.Al,s,s,s,698)}}
