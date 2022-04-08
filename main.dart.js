@@ -56629,10 +56629,10 @@ N(a,b){return A.vK(B.BY,B.R,B.a8,B.bc)}}
 A.BO.prototype={
 N(a,b){return B.A9}}
 A.FJ.prototype={
-N(a,b){return A.ip(A.a([A.a_C("icons/arrow_down.svg",50),B.Hr,B.LT],t.p),B.R,B.a8)}}
+N(a,b){return A.ip(A.a([A.a_C("assets/icons/arrow_down.svg",50),B.Hr,B.LT],t.p),B.R,B.a8)}}
 A.Gb.prototype={
 N(a,b){var s=null
-return A.a8P(B.jY,A.a([A.a_C("icons/github.svg",s),B.jA,A.a_C("icons/instagram.svg",s),B.jA,A.a_C("icons/snapchat.svg",s),B.jA,A.a7W("icons/gmail.png",s,s)],t.p),B.N4,0,10)}}
+return A.a8P(B.jY,A.a([A.a_C("assets/icons/github.svg",s),B.jA,A.a_C("assets/icons/instagram.svg",s),B.jA,A.a_C("assets/icons/snapchat.svg",s),B.jA,A.a7W("assets/icons/gmail.png",s,s)],t.p),B.N4,0,10)}}
 A.GM.prototype={
 N(a,b){var s=null
 return A.PK(A.cO(s,s,B.l,s,s,s,s,s,s,s,s,s,s),s,s,new A.L8(B.ei,s),B.F)}}
@@ -62023,7 +62023,7 @@ $.bU=1
 $.a8D=A.aU(["xx-small",10,"x-small",12,"small",14,"medium",18,"large",22,"x-large",26,"xx-large",32],t.N,t.i)
 $.abs=null
 $.a9r=A.aI(t.N)
-$.at_=A.a(["images/flutter.png","images/dart.png","images/python.png","images/html.png","images/js.png"],t.s)
+$.at_=A.a(["assets/images/flutter.png","assets/images/dart.png","assets/images/python.png","assets/images/html.png","assets/images/js.png"],t.s)
 $.acG=null
 $.acE=null
 $.acF=null})();(function lazyInitializers(){var s=hunkHelpers.lazyFinal,r=hunkHelpers.lazy
