@@ -32,7 +32,7 @@
 /build/
 
 # Build web soll nicht ignoriert werden
-!/build/web/
+!/build/web/*
 
 # Web related
 lib/generated_plugin_registrant.dart
